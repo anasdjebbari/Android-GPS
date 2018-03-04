@@ -1,0 +1,66 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/user_page_speed"
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/speed_view">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/user_page_distance"
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_page_speed">
+        </TextView>
+
+        <TextView
+            android:id="@+id/user_page_time"
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_page_distance">
+        </TextView>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_page_time"
+            android:text="Back"
+            android:background="#ffffff"
+            android:id="@+id/back"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+        <com.android.anasdjebbari.assignment3.DrawView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:id="@+id/secondlay"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+</LinearLayout>
